@@ -1,0 +1,33 @@
+< ! DOCTYPE  html >
+< html  lang = "en" >
+< cabeza >
+    < meta  charset = "UTF-8" >
+    < meta  http-equiv = "X-UA-Compatible"  content = "IE = edge" >
+    < meta  name = "viewport"  content = "width = device-width, initial-scale = 1.0" >
+    < título > Soy idiota xD perdon < / título >
+    < link  rel = "stylesheet"  href = "index.css" >
+< / cabeza >
+< cuerpo >
+    < div  class = "contenedor" >
+        < p > te invito a una cita por el boulebard ¿ azektas UwU? < / p >
+        < button  id = "yesBtn" > Jalo we & nbsp; < / botón >
+        < button  id = "noBtn" > Nel prro :'u < / button >
+    < / div >
+    < script  src = "index.js" > < / script >
+< / cuerpo >
+< / html >
+const  yesBtn  =  documento . querySelector ( '#yesBtn' ) ;
+
+yesBtn . addEventListener ( 'clic' , función  ( )  {
+    alert ( 'yei :D acordamos un dia en fin de semana, yo invito :3' ) ;
+} ) ;
+
+const  noBtn  =  documento . querySelector ( '#noBtn' ) ;
+
+noBtn . addEventListener ( 'mouseover' ,  function  ( )  {
+    const  randomX  =  parseInt ( Math . random ( ) * 100 ) ;
+    const  randomY  =  parseInt ( Math . random ( ) * 100 ) ;
+    noBtn . estilo . setProperty ( 'arriba' , randomY + '%' ) ;
+    noBtn . estilo . setProperty ( 'izquierda' , randomX + '%' ) ;
+    noBtn . estilo . setProperty ( 'transformar' , `traducir (- $ { aleatorioX } %, - $ { aleatorioY } %)` ) ;
+} )
